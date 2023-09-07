@@ -1,0 +1,156 @@
+// Import Bootstrap 4 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+}
+.header {
+  margin: auto;
+  padding: 5px;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.barisa {
+  text-align: center;
+  section {
+    text-align: center;
+    img {
+      height: 140px;
+      object-fit: cover;
+      cursor: pointer;
+      width: 50%;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        border-radius: 0;
+        width: 100%;
+        height: 310px;
+      }
+    }
+  }
+}
+.barisb {
+  text-align: center;
+  div {
+    text-align: center;
+    img {
+      height: 210px;
+      object-fit: cover;
+      cursor: pointer;
+      width: 50%;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        border-radius: 0;
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}
+.barisc {
+  text-align: center;
+  div {
+    text-align: center;
+    img {
+      height: 140px;
+      object-fit: cover;
+      cursor: pointer;
+      width: 50%;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        border-radius: 0;
+        width: 100%;
+        height: 310px;
+      }
+    }
+  }
+}
+.barisd {
+  text-align: center;
+  div {
+    text-align: center;
+    img {
+      height: 140px;
+      object-fit: cover;
+      cursor: pointer;
+      width: 50%;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        width: 100%;
+        height: 310px;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  text-align: center;
+  img {
+    object-fit: cover;
+  }
+}
+.overlay {
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  .prev,
+  .next {
+    background: white;
+    border-radius: 10%;
+  }
+}
+.overlay:target {
+  background: rgba(0, 0, 0, 0.5);
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  text-align: center;
+  margin: auto;
+  background: #fff;
+  width: 70%;
+  position: relative;
+  transition: all 5s ease-in;
+  border-radius: 20%;
+  img {
+    object-fit: cover;
+    height: 70vh;
+  }
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: ease-out all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  background: red;
+  color: white;
+  border-radius: 30%;
+}
+.popup .close:hover {
+  color: red;
+  background: none;
+}
